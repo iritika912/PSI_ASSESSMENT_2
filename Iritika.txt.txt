@@ -1,0 +1,45 @@
+1) var str = "www.google.com"
+   str.reverse.toUpperCase
+
+2)val name = "Vanilla Donut"
+  val qty = "10"
+  val pr = "2.5"
+  val json = s"""
+		{
+		"donut_name":"$donutName"
+		"quantity_purchased":"$qty"
+		"price":$pr
+		} """
+		.stripMargin
+  println(json)
+
+3)import scala.io.StdIn._
+  val name = readLine("Enter your name: ")
+  println("Enter your age")
+  val age = readInt()
+  print(Console.BOLD)
+  println("Name: ")
+  print(Console.UNDERLINED)
+  println(name)
+  print(Console.BOLD)
+  println("Age: ")
+  print(Console.RESET)
+  println(age)
+
+4) var str = "http://www.google.com"
+   println(str.charAt(7))
+
+5) val unitPrice = 2.50
+   val qty = 10
+   val tcost = unitPrice*qty
+   println(tcost%.2f)
+
+6)import scala.io.StdIn._
+  val fav = readLine("What is your favourite movie of all times?")
+  println(s"$fav is totally awesome.")
+
+7) val codes = Seq("A", "BB", "CCC", "DDDD", "EEEEE")
+   codes.map(code => println(s"$code - ${code.length}"))
+
+8) val x = List.range(100, 150, 10)
+   println(x.sum)
